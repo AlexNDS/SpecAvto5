@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/spec"
+    android:enabled="true"
+    android:title="Спец.Службы"
+    android:icon="@drawable/spec_icon"
+    />
+<item
+    android:id="@+id/taxi"
+    android:title="Такси"
+    android:icon="@drawable/taxi_icon"
+    />
+
+
+
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SpecAvto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="taxi_blanc">taxi</string>
+    <string name="spec_blanc">  Название службы _____________ Номер</string>
+    <string name="spec_blanc1">Полиция 102</string>
+    <string name="spec_blanc2">Пожарная 101</string>
+    <string name="spec_blanc3">Скорая 103</string>
+    <string name="spec_blanc4">Служба газа 104</string>
+
+
+</resources>
