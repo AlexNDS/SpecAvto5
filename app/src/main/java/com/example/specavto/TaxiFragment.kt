@@ -45,8 +45,8 @@ class TaxiFragment : Fragment() {
         // Inflate the layout for this fragment
 
 
-
-       val taxiRecyclerView:RecyclerView = view.findViewById<View>(R.id.taxi_recycler_view) as RecyclerView
+       // val usersRecyclerView: RecyclerView = view.findViewById(R.id.taxi_recycler_view)
+       val taxiRecyclerView:RecyclerView = view.findViewById(R.id.taxi_recycler_view)
 
         taxiRecyclerView.layoutManager =
                         LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
