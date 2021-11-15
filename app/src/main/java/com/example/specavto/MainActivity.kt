@@ -22,23 +22,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-   //     val bottomPolice: Button = findViewById(R.id.button_polce)
-
-  //      bottomPolice.setOnClickListener({
-
- //           makePhoneCall("911")
-//
-
-  //      })
-
-
-
-
-
-
-
-
-
         bottomMenu = findViewById(R.id.bottom_menu)
         // exitButton.setOnClickListener {onStop()}
         bottomMenu.setOnItemSelectedListener { item ->
@@ -66,19 +49,6 @@ class MainActivity : AppCompatActivity() {
             )
 
     }
-/*
-    private fun makePhoneCall(s: String): Boolean {
-        try {
-            val intent = Intent(Intent.ACTION_CALL)
-            intent.setData(Uri.parse("419154"))
-            startActivity(intent)
-            return true
-        } catch (e: Exception) {
-            e.printStackTrace()
-            return false
-        }
-    }
-*/
 
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager

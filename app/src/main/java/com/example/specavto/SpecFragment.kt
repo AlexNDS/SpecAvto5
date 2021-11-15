@@ -14,9 +14,7 @@ import androidx.core.content.ContextCompat.startActivity
 
 
 class SpecFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,17 +36,15 @@ class SpecFragment : Fragment() {
       //  val text = "Звоним в Полицию"
         val btn = view.findViewById<View>(R.id.button_polce)
         btn.setOnClickListener {
-           // Toast.makeText(context, text, Toast.LENGTH_LONG).show()
 
             makePhoneCall("102")
+
+
         }
+
+        Toast.makeText(context, "Spec", Toast.LENGTH_LONG).show()
+
         return view
-
-
-
-
-
-
 
         }
 
