@@ -11,6 +11,9 @@ import android.widget.Button
 import android.widget.TableLayout
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 
 class SpecFragment : Fragment() {
@@ -33,34 +36,51 @@ class SpecFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_spec, container, false)
-      //  val text = "Звоним в Полицию"
-        val btn = view.findViewById<View>(R.id.button_polce)
-        btn.setOnClickListener {
-
-            makePhoneCall("102")
 
 
-        }
+        Toast.makeText(context, "Spec", Toast.LENGTH_SHORT).show()
+        val specList: List<ListSpec> = listOf(
 
-        Toast.makeText(context, "Spec", Toast.LENGTH_LONG).show()
+            ListSpec(  R.drawable.spec_icon,  "Пожарная охрана", "101"),
+            ListSpec(  R.drawable.police, "Полиция", "102"),
+            ListSpec( R.drawable.sanitizer, " Скорая помощь", "103"),
+            ListSpec( R.drawable.alert,  "Газовая служба", "104"),
+            ListSpec( R.drawable.avaria, "Служба спасения", "112"),
+        )
+
+
+
+
+        //val usersRecyclerView: RecyclerView = view.findViewById(R.id.taxi_recycler_view)
+        val specRecyclerView: RecyclerView = view.findViewById(R.id.spec_recycler_view)
+
+
+
+        specRecyclerView.layoutManager =
+            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        specRecyclerView.addItemDecoration(
+            DividerItemDecoration(
+                context,
+                DividerItemDecoration.VERTICAL
+            )
+        )
+
+        specRecyclerView .adapter = SpecAdapter(specList)
+
+
+
+
+
+
 
         return view
 
         }
 
-    private fun makePhoneCall(number: String) : Boolean {
-        val text = "Звоним в ${number}"
-        try {
-          //  Toast.makeText(context, text, Toast.LENGTH_LONG).show()
-            val intent = Intent(Intent.ACTION_DIAL)
-            intent.setData(Uri.parse("tel:$number"))
-            startActivity(intent)
-            return true
-        } catch (e: Exception) {
-            e.printStackTrace()
-            return false
-        }
-    }
 
-    }
+        }
+
+
+
+
 

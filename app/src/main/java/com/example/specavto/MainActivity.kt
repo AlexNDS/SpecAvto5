@@ -17,13 +17,13 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var bottomMenu: BottomNavigationView
 
-    //  val exitButton:Button = findViewById(R.id.exit_button)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         bottomMenu = findViewById(R.id.bottom_menu)
-        // exitButton.setOnClickListener {onStop()}
+
         bottomMenu.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.spec -> {

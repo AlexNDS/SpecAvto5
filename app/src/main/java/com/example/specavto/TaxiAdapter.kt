@@ -12,23 +12,28 @@ import com.example.specavto.R.layout.taxi_card
 
 //import com.example.specavto.TaxiHolder
 
-class TaxiAdapter(private val taxiList: List<ListTaxi>) : RecyclerView.Adapter<TaxiHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaxiHolder {
-        TODO("Not yet implemented")
 
+
+class TaxiAdapter(  private val taxiList: List<ListTaxi>) : RecyclerView.Adapter<TaxiHolder>() {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaxiHolder {
+      
         val taxiView = LayoutInflater.from(parent.context)
             .inflate(taxi_card, parent, false)
         return TaxiHolder(taxiView)
     }
 
     override fun onBindViewHolder(holder: TaxiHolder, position: Int) {
-        TODO("Not yet implemented")
+
         val taxi = taxiList[position]
         holder.bind(taxi)
-    }
+
+        }
+
+
+
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+
         return taxiList.size
 
     }

@@ -27,39 +27,41 @@ class TaxiFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
+        Toast.makeText(context, "Taxi", Toast.LENGTH_SHORT).show()
         val taxiList: List<ListTaxi> = listOf(
 
-            ListTaxi("Такси Pit Stop", "30-30-00"),
-            ListTaxi("Яндекс такси", "21-11-11"),
-            ListTaxi("Максим", "222-222"),
-            ListTaxi("Восьмерочка", "46-88-88"),
-            ListTaxi("Лидер", " 33-34-44"),
-            ListTaxi("Статус", "440-440"),
-            ListTaxi("Грузовое такси", "27-25-22"),
+            ListTaxi(  R.drawable.taxi4,  "Такси Pit Stop", "30-30-00"),
+            ListTaxi(  R.drawable.taxi4, "Яндекс такси", "21-11-11"),
+            ListTaxi( R.drawable.taxi4, "Максим", "222-222"),
+            ListTaxi( R.drawable.taxi4,  "Восьмерочка", "46-88-88"),
+            ListTaxi( R.drawable.taxi4, "Лидер", " 33-34-44"),
+            ListTaxi( R.drawable.taxi4, "Статус", "440-440"),
+            ListTaxi( R.drawable.taxi4, "Грузовое такси", "27-25-22"),
         )
 
 
 
-        val view = inflater.inflate(R.layout.fragment_spec, container, false)
+      val view = inflater.inflate(R.layout.fragment_taxi, container, false)
         // Inflate the layout for this fragment
 
 
-       // val usersRecyclerView: RecyclerView = view.findViewById(R.id.taxi_recycler_view)
+  //val usersRecyclerView: RecyclerView = view.findViewById(R.id.taxi_recycler_view)
        val taxiRecyclerView:RecyclerView = view.findViewById(R.id.taxi_recycler_view)
 
-        taxiRecyclerView.layoutManager =
-                        LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-                            taxiRecyclerView.addItemDecoration(
-                                DividerItemDecoration(
-                                    context,
-                                    DividerItemDecoration.VERTICAL
-                                )
-                            )
 
-                               taxiRecyclerView .adapter = TaxiAdapter(taxiList)
+
+        taxiRecyclerView.layoutManager =
+                       LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                          taxiRecyclerView.addItemDecoration(
+                               DividerItemDecoration(
+                                    context,
+                                   DividerItemDecoration.VERTICAL
+                               )
+                          )
+
+                             taxiRecyclerView .adapter = TaxiAdapter(taxiList)
       
-        Toast.makeText(context, "Taxi", Toast.LENGTH_LONG).show()
+
 
 
         return view

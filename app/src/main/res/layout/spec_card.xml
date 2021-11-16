@@ -15,7 +15,7 @@
 
     <ImageView
 
-        android:id="@+id/taxi_image"
+        android:id="@+id/spec_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
@@ -28,10 +28,10 @@
 
 
     <TextView
-        android:id="@+id/taxi_name"
+        android:id="@+id/spec_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="3dp"
 
         android:gravity="start"
         android:layout_gravity="start"
@@ -44,7 +44,7 @@
         />
 
     <TextView
-        android:id="@+id/taxi_number"
+        android:id="@+id/spec_number"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="bottom"
@@ -57,13 +57,13 @@
         />
 
     <Button
-        android:id="@+id/button_taxi"
+        android:id="@+id/button_spec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="30dp"
         android:backgroundTint="@color/green"
-       android:textStyle="bold"
+        android:textStyle="bold"
         android:textColor="@color/red"
         android:layout_gravity="end"
         android:text="Вызов"

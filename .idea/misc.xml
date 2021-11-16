@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/alert.xml" value="0.1953125" />
+        <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/avaria.xml" value="0.1953125" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/police.xml" value="0.2703125" />
+        <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/sanitizer.xml" value="0.1953125" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/spec_icon.xml" value="0.26256410256410256" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/drawable/taxi_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/activity_main.xml" value="0.17481884057971014" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/fragment_spec.xml" value="0.32679738562091504" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/fragment_spec1.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/fragment_taxi.xml" value="0.17481884057971014" />
+        <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/spec_card.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/layout/taxi_card.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/scshe/Desktop/SpecAvto/app/src/main/res/menu/bottom_menu.xml" value="0.25052083333333336" />
       </map>
